@@ -1,3 +1,61 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+@font-face {
+    font-family: 'roboto';
+    src: url(Fonts/Inter\,Roboto_Condensed/RobotoCondensed-Italic-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-weight: 100;
+}
+
+.header {
+    background-color: #3498db;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-top: 4px solid #61a3d0;
+    border-bottom: 4px solid #61a3d0;
+  }
 h1{
-    font-family: sans-serif;
+    font-family: roboto;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+}
+
+h2{
+    font-family: roboto;
+    font-weight: 200;
+    font-style: italic;
+}
+.fardin img{
+    height: 300px;
+    width: 300px;
+}
+.fardin p{
+    float: right;
+}
+.background{
+    height: 100vh;
+    background-image: url(image/Sobuj.jpg);
+    background-size: 200px 200px;
+    /* background-repeat: repeat; */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: round; */
+    background-repeat: no-repeat;
+    background-position: top right;
+    /* background-origin: border-box; */
+    /* background-origin: padding-box; */
+    background-origin: content-box;
+    border: 20px solid red;
+    padding: 40px;
+    border-style: dotted;
+}
+.container{
+    display: flex;
+    /* flex-direction: row-reverse;
+    flex-direction: column; */
+    flex-direction: column-reverse;
 }
