@@ -48,14 +48,30 @@ h2{
     background-position: top right;
     /* background-origin: border-box; */
     /* background-origin: padding-box; */
-    background-origin: content-box;
+    /* background-origin: content-box; */
+    background-clip: content-box;
+    background-attachment: scroll;
     border: 20px solid red;
     padding: 40px;
     border-style: dotted;
 }
 .container{
-    display: flex;
-    /* flex-direction: row-reverse;
-    flex-direction: column; */
-    flex-direction: column-reverse;
+   background: url(image/thumb-6.png);
+   overflow-y: scroll;
+   height: 350px;
+   width: 500px;
+   margin: 16px auto 40px;
+}
+.scroll{
+    background-attachment: scroll;
+}
+.fixed{
+    background-attachment: fixed;
+}
+.local{
+    background-attachment: local;
+}
+
+.content{
+    margin: 24px 48px;
 }
